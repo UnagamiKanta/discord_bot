@@ -3,7 +3,7 @@ def is_mkissue(text):
 
 def get_issue_info(text):
     cmd = text.split(' ')
-    issue_info = {"repository": "", "title":"" , "body":None, "assignee":None, "labels":[]}
+    issue_info = {"repository": "", "title":"" , "body":"", "assignee":"", "labels":[]}
 
     for c in cmd:
         if c.startswith('repo='):
