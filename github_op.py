@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GITHUB_API_TOKEN = os.getenv("GITHUB_API_TOKEN")
-print("github_api_token: ",GITHUB_API_TOKEN)
 
 github = Github(GITHUB_API_TOKEN)
 organization_name = "tanochan-sakonyan"
